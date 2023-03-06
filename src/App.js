@@ -27,6 +27,7 @@ function App() {
   
   return (
     <div className="App">
+      <Home />
       <Routes>
         <Route path='/' element={ <Home/> }  />
         <Route path='/list' element={<List boardList={boardList} setBoardList={setBoardList} />} />
