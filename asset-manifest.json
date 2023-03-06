@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MDD_diary/static/css/main.31ce7a14.css",
-    "main.js": "/MDD_diary/static/js/main.41be2435.js",
-    "static/media/bg.png": "/MDD_diary/static/media/bg.0940693d68a24b4c0c58.png",
-    "index.html": "/MDD_diary/index.html",
-    "main.31ce7a14.css.map": "/MDD_diary/static/css/main.31ce7a14.css.map",
-    "main.41be2435.js.map": "/MDD_diary/static/js/main.41be2435.js.map"
+    "main.css": "/diary/static/css/main.3e2435fd.css",
+    "main.js": "/diary/static/js/main.c887e882.js",
+    "static/media/bg.png": "/diary/static/media/bg.0940693d68a24b4c0c58.png",
+    "index.html": "/diary/index.html",
+    "main.3e2435fd.css.map": "/diary/static/css/main.3e2435fd.css.map",
+    "main.c887e882.js.map": "/diary/static/js/main.c887e882.js.map"
   },
   "entrypoints": [
-    "static/css/main.31ce7a14.css",
-    "static/js/main.41be2435.js"
+    "static/css/main.3e2435fd.css",
+    "static/js/main.c887e882.js"
   ]
 }
