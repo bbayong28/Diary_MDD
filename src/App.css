@@ -1,38 +1,293 @@
-.App {
+/* common */
+body{
+  font-family: 'Roboto', sans-serif;
+
+}
+.container{
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.flex{
+  display: flex;
+}
+
+
+
+/* Home */
+.Home{
+  position: relative;
+  background: url('../public/assets/img/bg.png') no-repeat center center / cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Home .container{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Home .container h1{
+  font-size: 60px;
+  font-weight: 799;
+  color: #ffffff;
+  margin-bottom: 20px;
+  /* -webkit-text-stroke: 1px #c26cdc; */
+  text-shadow: 1px 1px 2px #d857ce;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Home .container p{
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Home .container .hmenu{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.Home .container .hmenu button{
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  background: #ffffff;
+  color: #222222;
+  border-radius: 8px;
+  box-shadow: 4px 5px 0 #edd1ed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Home .container .hmenu button:active {
+  box-shadow: 0 2px 0 #ddd;
+  transform: translateY(8px) translateX(8px);
+}
+
+.Home .container .hmenu button:hover {
+  color: #6d49f0;
+}
+
+
+
+/* Header */
+.Wheader,
+.Header{
+  line-height: 80px;
+  border-bottom: 1px solid #ddd;
+}
+
+.Wheader .container,
+.Header .container{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Wheader .logo,
+.Header .logo{
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.Wheader img,
+.Header img{
+  display: block;
+  width: 100%;
+}
+
+.Detail h2,
+.Wheader h2,
+.Header h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.Detail a i,
+.Wheader a i,
+.Header a i{
+  font-size: 19px;
+  background: #ddd;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+
+
+/* List */
+.List .pd,
+.BoardList .pd {
+  padding: 30px;
+}
+
+.ListTable{
+  width: 100%;
+  border-top: 2px solid #183691;
+}
+
+.ListTable thead{
+  background: #f8f9fa;
+  line-height: 36px;
+  border-bottom: 1px solid #ced4da;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+}
+
+.ListTable thead td{
+  border-right: 1px solid #ced4da;
+}
+
+.ListTable thead td:last-child {
+  border: none;
+}
+
+.ListTable tbody tr{
+  width: 100%;
+  border-bottom: 1px solid #ced4da;
+}
+
+.ListTable tbody tr:nth-child(even){
+  background: #f8f9fa;
+}
+
+.ListTable tbody td{
+  padding: 10px;
+}
+
+.ListTable tbody .no{
+  width: 70px;
+  text-align: center;
+  border-right:1px solid #ced4da;
+}
+
+.ListTable tbody .tit{
+  text-align: center;
+  border-right: 1px solid #ced4da;
+}
+
+.ListTable tbody .date {
+  width: 150px;
+  text-align: center;
+}
+
+
+
+/* Write */
+.WriteList .pd,
+.Modify .pd{
+  padding: 30px;
+}
+
+.WriteList .WriteTable,
+.Modify .ModifyTable{
+  text-align: center;
+}
+
+.WriteList .WriteTable tr .title,
+.Modify .ModifyTable tr .title{
+  font-size: 19px;
+}
+
+.WriteList .WriteTable tr,
+.Modify .ModifyTable tr{
+  height: 80px;
+  /* line-height: 80px; */
+}
+
+.WriteList .WriteTable input,
+.WriteList .WriteTable textarea,
+.Modify .ModifyTable input,
+.Modify .ModifyTable textarea {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.writeSubmit,
+.modifySubmit{
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+
+.writeSubmit button,
+.modifySubmit button{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #395CA0;
+  color: #fff;
+}
+
+.WriteList textarea,
+.Modify textarea {
+  resize: none;
+}
+
+
+
+/* Detail */
+.Detail .container{
+  text-align: center;
+}
+
+.Detail .dc{
+  padding: 30px ;
+}
+
+.Detail .dc .title{
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom :20px;
+}
+
+.Detail .dc .content{
+  padding: 10px 0;
+  height: 20vh;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.Detail .dc .date {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 30px;
+}
+
+.Detail .container .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.Detail .container button{
+  border: 1px solid #ddd;
+  outline: none;
+  background: transparent;
+  padding: 5px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.Detail .container button:hover{
+  background: #395CA0;
+  color:#fff;
+}
+
+.Detail .container button i{
+  font-size: 15px;
+  margin-left: 2px;
+}
+
+.Detail .container button .xi-eraser-o{
+  color: #0000ff;
+}
+.Detail .container button .xi-trash-o{
+  color: #ff0000;
 }
