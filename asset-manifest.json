@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MDD_diary/static/css/main.31ce7a14.css",
-    "main.js": "/MDD_diary/static/js/main.1742f6a4.js",
+    "main.js": "/MDD_diary/static/js/main.41be2435.js",
     "static/media/bg.png": "/MDD_diary/static/media/bg.0940693d68a24b4c0c58.png",
     "index.html": "/MDD_diary/index.html",
     "main.31ce7a14.css.map": "/MDD_diary/static/css/main.31ce7a14.css.map",
-    "main.1742f6a4.js.map": "/MDD_diary/static/js/main.1742f6a4.js.map"
+    "main.41be2435.js.map": "/MDD_diary/static/js/main.41be2435.js.map"
   },
   "entrypoints": [
     "static/css/main.31ce7a14.css",
-    "static/js/main.1742f6a4.js"
+    "static/js/main.41be2435.js"
   ]
 }
