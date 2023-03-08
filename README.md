@@ -2,8 +2,6 @@
 
 ## My Daily Diart
 
-수정, 삭제 기능 구현
-
 새글 작성하기
 작성 리스트 보여주기
 작성 리스트 수정, 삭제
@@ -12,6 +10,9 @@
 ### App.js
 
 여러 컴포넌트에서 쓰이는 state를 props를 용이하게 하기위해 제일 상위인 App.js에 만들었습니다.
+작성 값을 localStorage에 저장하게 한 후 setItem으로 저장하고 getItem으로 가져오게 했습니다.
+array/ object를 JSON으로 변환하기 위해 JSON.stringify()을 사용하였습니다.
+JSON을 array/ object으로 변환하기 위해 JSON.parse()을 사용하였습니다.
 Routes를 사용해 path와 element로 각 컴포넌트를 연결 시켰습니다.
 path에 "\*"를 넣어 404페이지를 만들었습니다.
 
