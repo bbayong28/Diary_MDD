@@ -1,6 +1,6 @@
 # 일기 사이트
 
-## My Daily Diart
+## My Daily Diary
 
 새글 작성하기
 작성 리스트 보여주기
