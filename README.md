@@ -1,71 +1,37 @@
-# Getting Started with Create React App
+# 일기 사이트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## My Daily Diart
 
-## Available Scripts
+수정, 삭제 기능 구현
 
-In the project directory, you can run:
+새글 작성하기
+작성 리스트 보여주기
+작성 리스트 수정, 삭제
+작성 날짜
 
-### `npm start`
+### App.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+여러 컴포넌트에서 쓰이는 state를 props를 용이하게 하기위해 제일 상위인 App.js에 만들었습니다.
+Routes를 사용해 path와 element로 각 컴포넌트를 연결 시켰습니다.
+path에 "\*"를 넣어 404페이지를 만들었습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Write.js
 
-### `npm test`
+useNavigate()를 시용해 작성한 후 "저장" 버튼을 누르면 목록 페이지로 이동하게 하였습니다.
+toLocaleDateString()를 사용해 작성 날짜가 입력되게 하였습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### List.js
 
-### `npm run build`
+header오른쪽에 새글 작성 버튼을 만들었습니다.
+useParams를 사용해 제목을 누르면 클릭한것을 렌더링해 해당 /detail/id 페이지로 넘어가 수정과 삭제를 할 수있게 하였습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Detail.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+header오른쪽에 목록으로 가기 버튼을 만들었습니다.
+useNavigate()를 시용해 수정 버튼을 누르면 /modify/id 페이지로 넘어가 수정을 할 수 있게 하였습니다.
+useNavigate()를 시용해 삭제 버튼을 누르면 filter()를 이용해 해당 아이디에 해당하는 객체를 삭제하고 /list 페이지로 넘어가게 하였습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Modify.js
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Diary_MDD
+useNavigate()를 시용해 작성한 후 "수정하기" 버튼을 누르면 목록 페이지로 이동하게 하였습니다.
+toLocaleDateString()를 사용해 작성 날짜 사용으로 작성날짜를 수정한 날짜로 업데이트 됩니다.

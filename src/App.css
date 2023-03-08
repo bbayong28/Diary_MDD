@@ -268,7 +268,6 @@ body{
 }
 
 .Detail .dc .content{
-  white-space: pre-line;
   padding: 20px;
   height: 30vh;
   border: 1px solid #ddd;
@@ -276,6 +275,7 @@ body{
   overflow-y: auto;
   line-height: 1.25;
   font-size: 17px;
+  word-wrap: break-word;
 }
 
 .Detail .dc .date {
@@ -316,4 +316,44 @@ body{
 }
 .Detail .container button .xi-trash-o{
   color: #ff0000;
+}
+
+.Error{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.Error .pa{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Error .pa p{
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.Error .pa span {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+
+
+.Error .pa a {
+  font-size: 20px;
+  font-weight: 500;
+  border: 1px solid #333;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+
+.Error .pa a:hover{
+  background: #333;
+  color: #fff;
 }

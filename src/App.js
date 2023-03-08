@@ -6,6 +6,7 @@ import List from './pages/List';
 import Write from './pages/Write';
 import Detail from './pages/Detail';
 import Modify from './pages/Modify';
+import Error from './pages/Error';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/write' element={<Write input={input} setInput={setInput} boardList={boardList} setBoardList={setBoardList}id={id} />} />
         <Route path='/detail/:id' element={<Detail boardList={boardList} setBoardList={setBoardList} />} />
         <Route path='/modify/:id' element={<Modify boardList={boardList} setBoardList={setBoardList} />} />
+        <Route path='/*' element={<Error/>} />
       </Routes>
     </div>
   );

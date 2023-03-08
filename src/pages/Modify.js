@@ -55,7 +55,6 @@ const Modify = ({ boardList, setBoardList }) => {
                 <td className='title'>내용 : </td>
                 <td className='second'>
                   <textarea
-                    rows='10'
                     name='content'
                     onChange={inputHandler}
                     value={input.content}

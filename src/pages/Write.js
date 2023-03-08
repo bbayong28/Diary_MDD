@@ -33,7 +33,7 @@ const Write = ({ input, setInput, boardList, setBoardList, id }) => {
 
     id.current++;
     setInput({
-      name: "",
+      //name: "",
       title: "",
       content:"",
     })
@@ -62,7 +62,6 @@ const Write = ({ input, setInput, boardList, setBoardList, id }) => {
                 <td className='title'>내용 : </td>
                 <td className='second'>
                   <textarea
-                    rows='10'
                     name='content'
                     onChange={inputHandler}
                     value={input.content || ''}
