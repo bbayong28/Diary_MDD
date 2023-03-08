@@ -25,7 +25,7 @@ const Detail = ({ boardList, setBoardList }) => {
           <h3>{v.title}</h3>
         </div>
         <div
-          style={{ whiteSpace: "pre-line" }}
+          
           className='content'
         >{v.content}</div>
         <div className='date'>작성날짜 : {v.date}</div>
