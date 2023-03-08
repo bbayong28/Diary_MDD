@@ -190,7 +190,21 @@ body{
 
 .WriteList .WriteTable tr .title,
 .Modify .ModifyTable tr .title{
+  width: 8vw;
+  text-align: left;
   font-size: 19px;
+}
+
+.WriteList .WriteTable tr input,
+.Modify .ModifyTable tr .input{
+  border: 1px solid #222;
+}
+
+.WriteList .WriteTable tr input:focus,
+.Modify .ModifyTable tr .input:focus,
+.WriteList .WriteTable textarea:focus,
+.Modify .ModifyTable textarea:focus{
+  border: 2px solid #183691;
 }
 
 .WriteList .WriteTable tr,
@@ -203,8 +217,15 @@ body{
 .WriteList .WriteTable textarea,
 .Modify .ModifyTable input,
 .Modify .ModifyTable textarea {
+  border-radius: 10px;
   width: 100%;
   padding: 10px 15px;
+  outline: none;
+}
+
+.WriteList .WriteTable textarea,
+.Modify .ModifyTable textarea{
+  height:65vh;
 }
 
 .writeSubmit,
@@ -215,12 +236,13 @@ body{
 
 .writeSubmit button,
 .modifySubmit button{
-  padding: 10px;
+  padding: 20px 10px;
   width: 100%;
   border: none;
   outline: none;
   background: #395CA0;
   color: #fff;
+  border-radius: 10px;
 }
 
 .WriteList textarea,
@@ -246,10 +268,13 @@ body{
 }
 
 .Detail .dc .content{
-  padding: 10px 0;
-  height: 20vh;
+  padding: 20px;
+  height: 30vh;
   border: 1px solid #ddd;
   margin-bottom: 20px;
+  overflow-y: auto;
+  line-height: 1.25;
+  font-size: 17px;
 }
 
 .Detail .dc .date {
